@@ -1,16 +1,14 @@
-import data from "../data.json";
+import data from "./data.json";
+import Result from "./components/Result";
+import Summary from "./components/Summary";
 
 function App() {
+
   return (
     <main className="h-screen flex justify-center items-center">
-      <div className="flex h-[512px] w-[736px] bg-[#fff] shadow-xl rounded-[33px]">
-        <div className="p-10 h-[512px] w-[368px] bg-[#4F39F4] rounded-[33px] flex-col flex items-center">
-          <h2>Your Result</h2>
-          <div className="h-[200px] w-[200px] rounded-full bg-black"></div>
-        </div>
-
-        <h2 className="text-black">test</h2>
-        <div className="flex items-center"></div>
+      <div className="lg:flex lg:flex-row flex-col lg:h-[512px] lg:w-[736px] h-[825px] w-[375px] bg-[#fff] shadow-2xl rounded-[33px]">
+        <Result />
+        <Summary data={data} />
       </div>
     </main>
   );
