@@ -16,7 +16,7 @@ const Result = (props: ResultProps) => {
           <div className="lg:mt-12 mt-8">
             <p className="flex flex-col items-center font-bold lg:text-[70px] text-[55px] leading-none text-white">
               <CountUp
-                end={props.averageScore.toFixed(0)}
+                end={Number(props.averageScore.toFixed(0))}
                 duration={3}
                 onEnd={() => setCount(true)}
               />
