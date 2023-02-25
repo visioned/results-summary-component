@@ -11,7 +11,7 @@ function App() {
   const averageScore = scores.reduce((a, b) => a + b, 0) / scores.length;
 
   return (
-    <main className="h-screen flex justify-center items-center">
+    <main className="h-screen flex justify-center items-center bg-[#fff]">
       <div className="lg:flex lg:flex-row flex-col lg:h-[512px] lg:w-[736px] h-[825px] w-[375px] bg-[#fff] shadow-2xl rounded-[33px]">
         <Result averageScore={averageScore} />
         <Summary data={data} />
